@@ -2,7 +2,7 @@ import os
 
 import discord
 
-TOKEN = "Nzk3MTA0MTIxNzczMjkzNTY4.X_hnEA.Ph4x_NMe4tFTIKcRtPyVGinmOAg"
+TOKEN = "Enter your token here"
 
 client = discord.Client()
 
