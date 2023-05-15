@@ -1,0 +1,84 @@
+CREATE TABLE Naming_Reactions (Name_of_Reaction VARCHAR(50) NOT NULL,Reaction VARCHAR(150) NOT NULL,Catalyst_Conditions VARCHAR(50) NOT NULL)
+CREATE TABLE Haloalkanes_Haloarenes (Name_of_Reaction VARCHAR(50) NOT NULL,Reaction VARCHAR(150) NOT NULL,Catalyst_Conditions VARCHAR(50) NOT NULL)
+INSERT INTO Naming_Reactions VALUES ('Finkestein Reaction', 'R-X + NaI --> R-I + NaX', 'No Catalyst')
+INSERT INTO Naming_Reactions VALUES ('Swarts Reaction', 'R-Br + AgF --> R-F + AgBr', 'AgF ')
+INSERT INTO Naming_Reactions VALUES ('Sandmeyers Reaction', 'C6H5-NH2 --> C6H5-N2X --> C6H5-X + N2', '(i)NaNO2 + HX at 273-278K (ii) Cu2X2')
+INSERT INTO Naming_Reactions VALUES ('Gatterman Reaction', 'C6H5-NH2 --> C6H5-N2X --> C6H5-X + N2 + CuX', '(i)NaNO2 + HX at 273-278K (ii)Cu | HX')
+INSERT INTO Naming_Reactions VALUES ('Grignard Reagent Formation', 'R-X + Mg --> RMgX(Grignard Reagent)', 'Dry ether')
+INSERT INTO Naming_Reactions VALUES ('Wurtz Reaction', 'R-X + 2Na + X-R --> R-R + 2Na-X', 'Dry ether')
+INSERT INTO Naming_Reactions VALUES ('Wurtz Fittig Reaction', 'CH3-Cl + 2Na + Cl-C6H5 --> C6H5-CH3 + 2NaCl', 'Dry ether')
+INSERT INTO Naming_Reactions VALUES ('Fittig Reaction', 'C6H5-Cl + 2Na + Cl-C6H5 --> C6H5-C6H5 + 2NaCl', 'Dry ether')
+INSERT INTO Naming_Reactions VALUES ("Dow's Process", 'C6H5-Cl + NaOH --> C6H5-ONa --> C6H5OH', '(i)623K | 300 atm (ii)HCl')
+SELECT * FROM Naming_Reactions
+INSERT INTO Naming_Reactions VALUES ("Williamson's Ether Synthesis", "R-X + R'ONa --> ROR' + Na-X", "R'ONa - Nucleophile, R-X should be primary")
+INSERT INTO Naming_Reactions VALUES ("Kolbe's reaction", 'C6H5OH + NaOH --> C6H5ONa --> 2 Hydroxybenzoic acid', '(i)No catalyst (ii)a)CO2 b)H2')
+INSERT INTO Naming_Reactions VALUES ('Reimer Tiemann reaction', 'C6H5OH -->[C6H5(ONa)(CHCl2)]-->C6H5(ONa)(CHO)-->C6H5(OH)(CHO){Salicylaldehyde}[Note:Fn grps written in () order indicates 1,2,pos in the benzene ring]', '(i)CHCl3 + aq.NaOH (ii)NaOH (iii)H+ ion')
+INSERT INTO Naming_Reactions VALUES ('Friedel Crafts Alkylation', 'C6H5-Cl + CH3Cl --> C6H5(CH3)[Para chlorotoluene major product]', 'Anhydrous AlCl3 ')
+INSERT INTO Naming_Reactions VALUES ('Friedel Crafts Acylation', 'C6H5-Cl + CH3CO-Cl --> C6H5(Cl)(COCH3)[para compound is the major product]', 'Anhydrous AlCl3')
+INSERT INTO Naming_Reactions VALUES ('Friedel Crafts Benzoylation', 'C6H6 + C6H5-(C=O)-Cl --> C6H5-(C=O)-C6H5[Diphenyl Methanone]', 'Anhydrous AlCl3')
+INSERT INTO Naming_Reactions VALUES ('Rosenmund Reaction', 'C6H5-(C=O)-Cl + H2 --> C6H5-CHO + HCl ', 'Pd-BaSO4 ')
+INSERT INTO Naming_Reactions VALUES ('Stephen Reaction', 'R-CN + SnCl2 + HCl --> RCH=NH --> R-CHO', '(i)No Catalyst (ii)(H3O)+ - Hydronium ion')
+INSERT INTO Naming_Reactions VALUES ('Etard Reaction', 'C6H5-CH3 + CrO2Cl2 --> C6H5-CH(OCrOHCl2)[Chromium complex] --> C6H5-CHO', '(i)CS2 (ii) (H3O)+ ion')
+SELECT * FROM Naming_Reactions
+SELECT * FROM test_rec
+SELECT * FROM Naming_Reactions
+SELECT * FROM Naming_reactions
+SELECT * FROM test_rec
+SELECT * FROM test_rec
+SELECT * FROM drugs
+CREATE TABLE challenges (Subject CHAR(15) ,Work_Type VARCHAR(30) ,Time_Taken(in hrs) CHAR(7) ,Deadline DATE ,Points CHAR(3) )
+CREATE TABLE challenges (Subject CHAR(15) ,Work_type VARCHAR(30) ,Time_taken CHAR(10) ,Deadline DATE ,Points CHAR(3) )
+INSERT INTO challenges  VALUES ('Chemistry', 'C.W-Org Chem-1', '15 min', '2020-07-20', '20')
+INSERT INTO challenges  VALUES ('Chemistry', 'C.W-Org Chem-2', '45 min', '2020-07-20', '20')
+INSERT INTO challenges  VALUES ('Maths', 'Record work', '30 min', '2020-07-21', '15')
+INSERT INTO challenges  VALUES ('Maths', 'C.W - appl of derivativ', '2 hrs', '2020-07-22', '50')
+INSERT INTO challenges  VALUES ('Chemistry', 'C.W-Inorg Chem-1', '1 hr', '2020-07-21', '25')
+SELECT * FROM challenges
+CREATE TABLE Network_Def (Terms CHAR(30) ,Definintions VARCHAR(200) )
+INSERT INTO network_def VALUES ('SIM', 'Subscriber Identity Module,Size: 16-64kb of memory')
+INSERT INTO network_def VALUES ('CDMA', 'Code division multiple access,uses spread spectrum technique.used by Reliance,Tata docomo etc, was replaced by GSM')
+INSERT INTO network_def VALUES ('GPRS', 'General Processing Radio Service')
+SELECT * FROM test_rec
+CREATE TABLE Pokemon_lts (Pokemon VARCHAR(50) ,IVs VARCHAR(10) ,Gender VARCHAR(5) ,Cost VARCHAR(10) ,Nature VARCHAR(20) )
+INSERT INTO pokemon_lts VALUES ('Torchic', '5 IVs', 'Both', '10K PKC', 'nil')
+INSERT INTO pokemon_lts VALUES ('Mudkip', '5 IVs', 'Both', '10K PKC', 'nil')
+INSERT INTO pokemon_lts VALUES ('Gible', '5 IVs', 'Both', '15K PKC', 'nil')
+INSERT INTO pokemon_lts VALUES ('Swablu', '5 IVs', 'Both', '13K PKC', 'nil')
+INSERT INTO pokemon_lts VALUES ('Chimchar', '5 IVs', 'Both', '15K PKC', 'nil')
+SELECT * FROM pokemon_lts
+SELECT * FROM pokemon_lts
+CREATE TABLE snivys (boxpk VARCHAR(5) ,HP CHAR(3) ,Atk CHAR(3) ,Def CHAR(3) ,SpA CHAR(3) ,SpD CHAR(3) ,Spe CHAR(3) ,Nature VARCHAR(15) ,HA CHAR(3) ,Cost VARCHAR(10) )
+INSERT INTO snivys VALUES ('a3', '30', '27', '31', '31', '31', '31', 'Impish', 'no', '5000 PKC')
+INSERT INTO snivys VALUES ('a4', '31', '27', '31', '28', '31', '31', 'Calm', 'no', '4000 PKC')
+INSERT INTO snivys VALUES ('a5', '31', '21', '30', '31', '31', '31', 'Calm', 'no', '4000 PKC')
+INSERT INTO snivys VALUES ('a6', '30', '19', '31', '31', '31', '31', 'Bashful', 'no', '5500 PKC')
+INSERT INTO snivys VALUES ('b1', '31', '19', '29', '31', '31', '31', 'Calm', 'no', '4500 PKC')
+INSERT INTO snivys VALUES ('b2', '27', '21', '31', '31', '31', '31', 'Bashful', 'no', '4000 PKC')
+INSERT INTO snivys VALUES ('b3', '31', '21', '31', '31', '31', '26', 'Modest', 'no', '3500 PKC')
+INSERT INTO snivys VALUES ('b4', '31', '27', '31', '31', '31', '20', 'Calm', 'no', '3500 PKC')
+INSERT INTO snivys VALUES ('\tb5', '31', '13', '31', '31', '31', '31', 'Lonely', 'no', '5500 PKC')
+INSERT INTO snivys VALUES ('b6', '31', '21', '21', '31', '31', '31', 'Relaxed', 'no', '3500 PKC')
+INSERT INTO snivys VALUES ('c1', '31', '27', '31', '10', '31', '31', 'Modest', 'no', '3000 PKC')
+INSERT INTO snivys VALUES ('c2', '31', '11', '31', '25', '31', '31', 'Docile', 'no', '3000 PKC')
+INSERT INTO snivys VALUES ('c3', '31', '19', '31', '31', '31', '17', 'Docile', 'no', '3000 PKC')
+INSERT INTO snivys VALUES ('c4', '17', '19', '31', '31', '31', '31', 'Serious', 'no', '3000 PKC')
+INSERT INTO snivys VALUES ('c5', '14', '19', '31', '31', '31', '31', 'Docile', 'no', '2500 PKC')
+INSERT INTO snivys VALUES ('c6', '31', '21', '9', '31', '31', '31', 'Mild', 'no', '2500 PKC')
+INSERT INTO snivys VALUES ('d1', '31', '21', '9', '31', '31', '31', 'Careful', 'no', '2500 PKC')
+INSERT INTO snivys VALUES ('d2', '31', '21', '31', '31', '31', '8', 'Lonely', 'no', '2500 PKC')
+INSERT INTO snivys VALUES ('d3', '6', '21', '31', '31', '31', '31', 'Rash', 'no', '2000 PKC')
+SELECT * FROM snivys
+SELECT * FROM pokemon_lts
+CREATE TABLE LTS (Pokemon or Pokeskins VARCHAR(25) ,Cost VARCHAR(25) )
+CREATE TABLE LTS (Pokemon_or_pokeskins VARCHAR(25) ,Cost VARCHAR(25) )
+INSERT INTO LTS VALUES ('Serperior armored', '5000 PKC')
+INSERT INTO LTS VALUES ('Elektross armored', '5000 PKC')
+INSERT INTO LTS VALUES ('Snivy', '4000 PKC')
+INSERT INTO LTS VALUES ('Chimchar', '5000 PKC')
+SELECT * FROM LTS
+SELECT * FROM LTS
+SELECT * FROM LTS
+SELECT * FROM LTS
+CREATE TABLE LTS (Pokemon VARCHAR(25) ,IVs CHAR(3) ,Natures_Available VARCHAR(50) ,HA CHAR(5) ,Cost VARCHAR(10) )
+INSERT INTO LTS VALUES ('Deino', '5', 'Modest,Quiet,Jolly,Calm', 'None', '5000 PKC')
+SELECT * FROM lts
